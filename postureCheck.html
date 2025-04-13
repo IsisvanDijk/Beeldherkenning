@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posture checker</title>
+  <link rel="stylesheet" href="src/style.css">
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <script defer type="module" src="src/script.js"></script>
+</head>
+
+<body>
+<a href="index.html" class="fixed-back-button" title="Back to Home">←</a>
+
+
+<h1>Posture checker</h1>
+<button id="webcamButton" class="action-button">Check your posture</button>
+
+<p id="prediction-status" >Prediction comes here...</p>
+
+<div class="videoView">
+  <video id="webcam" class="video" style="position: absolute;" muted autoplay playsinline></video>
+  <canvas id="output_canvas"></canvas>
+</div>
+
+<p id="model-status" >Model is loading...</p>
+
+</body>
+
+</html>
